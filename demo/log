@@ -1,0 +1,84 @@
+2023-02-07 11:29:10,957 main  INFO   c.g.p.GeneratePdfApplication#51 Starting GeneratePdfApplication using Java 17.0.5 with PID 10022 (/home/ayushi/Downloads/demo(1)/demo/target/classes started by ayushi in /home/ayushi/Downloads/demo(1)/demo)
+2023-02-07 11:29:11,005 main  INFO   c.g.p.GeneratePdfApplication#630 No active profile set, falling back to 1 default profile: "default"
+2023-02-07 11:29:12,060 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#291 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-07 11:29:12,067 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#138 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-07 11:29:12,148 main  INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport#320 Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.generate.pdf.repo.EmployeeRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2023-02-07 11:29:12,151 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#208 Finished Spring Data repository scanning in 57 ms. Found 0 JPA repository interfaces.
+2023-02-07 11:29:12,230 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#291 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-07 11:29:12,233 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#138 Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-02-07 11:29:12,413 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#208 Finished Spring Data repository scanning in 179 ms. Found 1 MongoDB repository interfaces.
+2023-02-07 11:29:12,449 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#291 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-07 11:29:12,452 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#138 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-02-07 11:29:12,476 main  INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport#320 Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.generate.pdf.repo.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-02-07 11:29:12,476 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#208 Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-02-07 11:29:13,331 main  INFO   o.s.b.w.e.t.TomcatWebServer#108 Tomcat initialized with port(s): 8080 (http)
+2023-02-07 11:29:13,344 main  INFO   o.a.c.c.StandardService#173 Starting service [Tomcat]
+2023-02-07 11:29:13,345 main  INFO   o.a.c.c.StandardEngine#173 Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-07 11:29:13,502 main  INFO   o.a.c.c.C.[.[.[/]#173 Initializing Spring embedded WebApplicationContext
+2023-02-07 11:29:13,503 main  INFO   o.s.b.w.s.c.ServletWebServerApplicationContext#291 Root WebApplicationContext: initialization completed in 2344 ms
+2023-02-07 11:29:13,587 main  WARN   o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext#592 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2023-02-07 11:29:13,591 main  INFO   o.a.c.c.StandardService#173 Stopping service [Tomcat]
+2023-02-07 11:29:13,615 main  INFO   o.s.b.a.l.ConditionEvaluationReportLogger#82 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-02-07 11:29:13,637 main  ERROR  o.s.b.d.LoggingFailureAnalysisReporter#40 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-02-07 11:31:57,838 main  INFO   c.g.p.GeneratePdfApplication#51 Starting GeneratePdfApplication using Java 17.0.5 with PID 10400 (/home/ayushi/Downloads/demo(1)/demo/target/classes started by ayushi in /home/ayushi/Downloads/demo(1)/demo)
+2023-02-07 11:31:57,847 main  INFO   c.g.p.GeneratePdfApplication#630 No active profile set, falling back to 1 default profile: "default"
+2023-02-07 11:31:59,002 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#291 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-07 11:31:59,005 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#138 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-07 11:31:59,063 main  INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport#320 Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.generate.pdf.repo.EmployeeRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2023-02-07 11:31:59,064 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#208 Finished Spring Data repository scanning in 45 ms. Found 0 JPA repository interfaces.
+2023-02-07 11:31:59,127 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#291 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-07 11:31:59,128 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#138 Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-02-07 11:31:59,287 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#208 Finished Spring Data repository scanning in 158 ms. Found 1 MongoDB repository interfaces.
+2023-02-07 11:31:59,311 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#291 Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-07 11:31:59,313 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#138 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-02-07 11:31:59,329 main  INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport#320 Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.generate.pdf.repo.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-02-07 11:31:59,329 main  INFO   o.s.d.r.c.RepositoryConfigurationDelegate#208 Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-02-07 11:32:00,237 main  INFO   o.s.b.w.e.t.TomcatWebServer#108 Tomcat initialized with port(s): 8080 (http)
+2023-02-07 11:32:00,256 main  INFO   o.a.c.c.StandardService#173 Starting service [Tomcat]
+2023-02-07 11:32:00,256 main  INFO   o.a.c.c.StandardEngine#173 Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-07 11:32:00,448 main  INFO   o.a.c.c.C.[.[.[/]#173 Initializing Spring embedded WebApplicationContext
+2023-02-07 11:32:00,449 main  INFO   o.s.b.w.s.c.ServletWebServerApplicationContext#291 Root WebApplicationContext: initialization completed in 2463 ms
+2023-02-07 11:32:00,567 main  WARN   o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext#592 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2023-02-07 11:32:00,572 main  INFO   o.a.c.c.StandardService#173 Stopping service [Tomcat]
+2023-02-07 11:32:00,601 main  INFO   o.s.b.a.l.ConditionEvaluationReportLogger#82 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-02-07 11:32:00,626 main  ERROR  o.s.b.d.LoggingFailureAnalysisReporter#40 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
